@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body class="bg-black">
+    <div class="sidenav position-fixed top-0 bottom-0 d-flex flex-row-reverse">
+        <div class="frontside bg-white d-flex flex-column justify-content-between align-items-center py-4">
+            <img src="./imgs/logo.png" alt="" class="sideimg">
+            <i class="fa-solid fa-bars fs-1 text-black closeopenbtn"></i>
+            <div class="icons d-flex flex-column">
+                <i class="fa-solid fa-globe pb-1 text-black"></i>
+                <i class="fa-solid fa-share-nodes text-black"></i>
+            </div>
+        </div>
+        <div class="backside bg-black text-white d-flex flex-column justify-content-between py-4 px-4">
+            <div>
+                <ul class="list-unstyled">
+                    <li class="searchli">Search</li>
+                    <li class="categoryli">Categories</li>
+                    <li class="areali">Area</li>
+                    <li class="ingredientsli">Ingredients</li>
+                    <li class="contact">Contact Us</li>
+                </ul>
+            </div>
+            <div>
+                <div class="backicon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p>Copyright Â© 2019 All Rights
+                    Reserved.</p>
+            </div>
+        </div>
+    </div>
+    <div class="mainpage d-block">
+        <div class="container mt-5">
+            <div class="row mainPageContent gy-4">
+            </div>
+        </div>
+    </div>
+
+    <div class="contactpage container  text-center d-none ">
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" placeholder="Enter Your Name" id="name" class="nameInput">
+                <div class="message name d-none">Special characters and numbers not allowed</div>
+            </div>
+            <div class="col-md-6">
+                <input type="email" placeholder="Enter Your Email" id="mail">
+                <div class="message mail  d-none">Email not valid *exemple@yyy.zzz</div>
+            </div>
+            <div class="col-md-6">
+                <input type="phone" placeholder="Enter Your Phone" id="phone">
+                <div class="message phone d-none">Enter valid Phone Number</div>
+            </div>
+            <div class="col-md-6">
+                <input type="number" placeholder="Enter Your Age" id="age">
+                <div class="message age d-none">Enter valid age</div>
+            </div>
+            <div class="col-md-6">
+                <input type="password" placeholder="Enter Your Password" id="password">
+                <div class="message password d-none">Enter valid password *Minimum eight characters, at least one letter
+                    and one number:*</div>
+            </div>
+            <div class="col-md-6">
+                <input type="password" placeholder="Repassword" id="repassword">
+                <div class="message repassword d-none">Enter valid repassword</div>
+            </div>
+        </div>
+        <button class="btn btn-outline-danger disabled mt-4 submitBtn">Submit</button>
+    </div>
+
+    <div class="detailsPage my-5 text-white d-none">
+        <div class="container">
+            <div class="row details">
+            </div>
+        </div>
+    </div>
+
+    <div class="search d-none ">
+        <div class="container w-75 ">
+            <div class="row py-4  ">
+                <div class="col-md-6">
+                    <input type="search"class="form-control searchbyname bg-transparent  text-white w-100  rounded-2 p-2"
+                        placeholder="Search By Name"></div>
+                <div class="col-md-6">
+                    <input type="search"class="form-control searchbyfirstletter bg-transparent w-100 text-white rounded-2 p-2"
+                        placeholder="Search By First Letter">
+                </div>
+            </div>
+            <div class="searchResalt">
+                <div class="row searchResaltContent gy-4 my-5">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container categorypage my-5 d-none ">
+        <div class="row category">
+        </div>
+    </div>
+    <div class="mealPage d-none ">
+        <div class="container mt-5">
+            <div class="row mealCategoryPage my-5 gy-4">
+            </div>
+        </div>
+    </div>
+
+    <div class="areaPage d-none my-5">
+        <div class="container">
+            <div class="row areaPageData text-white my-5 text-center g-4">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="integredientPage d-none my-5">
+        <div class="container">
+            <div class="row integredientPageData text-white text-center my-5">
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div
+        class="loading min-vh-100 position-fixed top-0 bottom-0 start-0 end-0 text-white d-none d-flex justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/jquery-3.7.1.min.js"></script>
+    <script src="./JS/script.js" type="module"></script>
+</body>
+
+</html>
